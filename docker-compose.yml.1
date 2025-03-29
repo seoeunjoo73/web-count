@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   webserver:
-    image: newfairy/web_count:v1.0
+    build: .
     ports:
      - "8899:8899"
     depends_on:
@@ -9,5 +9,3 @@ services:
 
   redis:
     image: redis:6.0
-~
-
